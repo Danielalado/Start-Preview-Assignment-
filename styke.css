@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    font-weight: 600;
+    background-color: black;
+    display: flex;
+}
+
+.left-col{
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(83, 51, 116, 0.466);
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+
+}
+
+span{
+    color: blueviolet;
+}
+.header{
+    padding-bottom: 2rem;
+}
+
+p{
+    padding-top: 10px;
+}
+
+.sub-header{
+    display: flex;
+    padding: 10px 20px;
+
+}
+
+    .right-col{
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    margin-left: 20;
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+}
+
+.dif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
