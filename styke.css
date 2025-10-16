@@ -7,25 +7,25 @@
 }
 
 .container{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    font-weight: 600;
-    background-color: black;
-    display: flex;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  /* background-size: cover; */
+    
 }
 
 .left-col{
-    padding: 20px;
-    width: 500px;
-    height: 500px;
+    padding: 3rem 3rem 3rem 3rem ;
+    width: 30rem;
+    height: 28rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: rgba(83, 51, 116, 0.466);
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    background-color:rgb(37, 7, 66);
+    /* margin: auto 3rem auto 3rem ; */
     color: white;
 
 }
@@ -35,6 +35,13 @@ span{
 }
 .header{
     padding-bottom: 2rem;
+    flex: 1;
+}
+
+.header h2{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+
 }
 
 p{
@@ -43,25 +50,44 @@ p{
 
 .sub-header{
     display: flex;
-    padding: 10px 20px;
-
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-    .right-col{
-    padding: 20px;
-    width: 500px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    margin-left: 20;
-    margin-top: 50px;
-    margin-bottom: 0px;
+.right-col{
 
+  position: relative;
+  display: flex;
 }
 
-.dif{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
+.right-col::after {
+  content: "";
+  position: absolute;
+  background-color: blueviolet;
+  inset: 0;
+  opacity: 0.55;
+}
+  
+
+
+/* Media queyries starts here */
+/* 
+  ##Device= Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px */
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container{
+    flex-direction: column;
+  }
+
+  .header h2{
+    font-size: 1rem;
+  }
+
+  .header p{
+    font-size: 0.9rem;
+  }
+ 
+  
 }
